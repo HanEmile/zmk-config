@@ -13,8 +13,8 @@
             compatible = "zmk,behavior-hold-tap";
             label = "AUTO_SHIFT";
             #binding-cells = <2>;
-            tapping_term_ms = <200>;
-            quick_tap_ms = <100>;
+            tapping_term_ms = <200>; // How long in milliseconds the key must be held to trigger a hold
+            quick_tap_ms = <100>; // Tap twice within this period (in milliseconds) to trigger a tap, even when held (default -1 = off)
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
@@ -46,7 +46,7 @@
                                             &kp ESC    &lt 1 SPACE    &lt 2 BSPC  &kp RET
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
-        ;
+        };
 
         left_layer {
             bindings = <
