@@ -77,7 +77,7 @@
            &kc C_PREV  VOL_UP     VOL_DN    &kc C_NEXT  &kp TAB       AS(MINUS)  AS(EQUAL)   AS(LBKT)   AS(RBKT)   AS(BSLH) 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │PLY/PAUSE │ MUTE     │          │          │   │ F11      │ ` ~      │ DEL      │ ' "      │  F12     │
-            &trans     &kc CPP   &kc C_MUTE  &trans     &trans         &kc F11   AS(GRAVE)   &kc DEL    AS(SQT)    &kc F12  
+            &trans     &kc C_PP  &kc C_MUTE  &trans     &trans         &kc F11   AS(GRAVE)   &kc DEL    AS(SQT)    &kc F12  
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
