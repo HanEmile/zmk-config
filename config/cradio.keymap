@@ -6,6 +6,8 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define AS(keycode) &as LS(keycode) keycode     // Autoshift Macro
+#define VOL_UP &kp C_VOL_UP
+#define VOL_DN &kp C_VOL_DN
 
 / {
     behaviors {
@@ -68,14 +70,14 @@
         right_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│          │  [       │  {       │  }       │          │   │  ^       │  (       │  )       │  ]       │  ~       │
-            &trans     &kp LBKT   &kp LBRC   &kp RBRC   &trans         &kp CARET  &kp LPAR   &kp RPAR   &kp RBKT   &kp TILDE
+        //│  F1      │  F2      │  F3      │  F4      │  F5      │   │  F6      │  F7      │  F8      │  F9      │  F10     │
+            &kc F1     &kc F2     &kc F3     &kc F4     &kc F5         &kc F6     &kc F7     &kc F8     &kc F9     &kc F10   
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  !       │  @       │  #       │  $       │  %       │   │  *       │  -       │  =       │  \       │  `       │
-            &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp ASTRK  &kp MINUS  &kp EQUAL  &kp BSLH   &kp GRAVE
+        //│ PRV TRCK │ VOL UP   │ VOL DOWN │ NXT TRCK │ TAB      │   │ - _      │ = +      │ { [      │ } ]      │ \ |      │
+           &kc C_PREV  VOL_UP     VOL_DN    &kc C_NEXT  &kp TAB       AS(MINUS)  AS(EQUAL)   AS(LBKT)   AS(RBKT)   AS(BSLH) 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │          │   │  &       │  _       │  +       │  │       │          │
-            &trans     &trans     &trans     &trans     &trans         &kp AMPS   &kp UNDER  &kp PLUS   &kp PIPE   &trans
+        //│          │PLY/PAUSE │ MUTE     │          │          │   │ F11      │ ` ~      │ DEL      │ ' "      │  F12     │
+            &trans     &kc CPP   &kc C_MUTE  &trans     &trans         &kc F11   AS(GRAVE)   &kc DEL    AS(SQT)    &kc F12  
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
