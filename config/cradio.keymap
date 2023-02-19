@@ -43,10 +43,10 @@
             AS(Z)      AS(X)      AS(C)      AS(D)      AS(V)          AS(K)      AS(H)      AS(COMMA)  AS(DOT)    AS(FSLH)
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
         //                                 │  ESC     │  SPC     │   │  BSPC    │  ENT     │                                 
-                                            &kp ESC    &lt 1 SPACE    &lt 2 BSPC  &kp 1 ENTER
+                                            &kp ESC    &lt 1 SPACE    &lt 2 BSPC  &kp ENTER
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
-        w;
+        ;
 
         left_layer {
             bindings = <
