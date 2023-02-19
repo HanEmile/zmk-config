@@ -71,13 +71,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  F1      │  F2      │  F3      │  F4      │  F5      │   │  F6      │  F7      │  F8      │  F9      │  F10     │
-            &kc F1     &kc F2     &kc F3     &kc F4     &kc F5         &kc F6     &kc F7     &kc F8     &kc F9     &kc F10   
+            &kp F1     &kp F2     &kp F3     &kp F4     &kp F5         &kp F6     &kp F7     &kp F8     &kp F9     &kp F10   
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ PRV TRCK │ VOL UP   │ VOL DOWN │ NXT TRCK │ TAB      │   │ - _      │ = +      │ { [      │ } ]      │ \ |      │
-           &kc C_PREV  VOL_UP     VOL_DN    &kc C_NEXT  &kp TAB       AS(MINUS)  AS(EQUAL)   AS(LBKT)   AS(RBKT)   AS(BSLH) 
+           &kp C_PREV  VOL_UP     VOL_DN    &kp C_NEXT  &kp TAB       AS(MINUS)  AS(EQUAL)   AS(LBKT)   AS(RBKT)   AS(BSLH) 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │PLY/PAUSE │ MUTE     │          │          │   │ F11      │ ` ~      │ DEL      │ ' "      │  F12     │
-            &trans     &kc C_PP  &kc C_MUTE  &trans     &trans         &kc F11   AS(GRAVE)   &kc DEL    AS(SQT)    &kc F12  
+            &trans     &kp C_PP  &kp C_MUTE  &trans     &trans         &kp F11   AS(GRAVE)   &kp DEL    AS(SQT)    &kp F12  
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
