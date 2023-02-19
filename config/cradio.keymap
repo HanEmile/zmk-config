@@ -43,7 +43,7 @@
             AS(Z)      AS(X)      AS(C)      AS(D)      AS(V)          AS(K)      AS(H)      AS(COMMA)  AS(DOT)    AS(FSLH)
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
         //                                 │  ESC     │  SPC     │   │  BSPC    │  ENT     │                                 
-                                            &kp ESC    &lt 1 SPACE    &lt 2 BSPC  &kp RET
+                                            &kp ESC    &lt 1 SPACE    &lt 2 BSPC  &kp ENTER
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
